@@ -1,0 +1,10 @@
+header.header
+  h2.logo Cloud Storage
+  .right-segment
+    if user
+      .username= user.name
+      img(src=`/img/users/${user.photo}`)
+    else
+      a.login.btn(href="/login") Login
+      a.sign-up.btn(href="/sign-up") Sign Up
+

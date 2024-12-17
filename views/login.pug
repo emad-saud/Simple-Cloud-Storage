@@ -1,0 +1,11 @@
+extends base
+block content
+  .form-box
+    h3 Login
+    form#login
+      input(type="email" id="email" placeholder="Email")
+      input(type="password" id="password" placeholder="Password")
+      input(input type="submit" value="Send")
+    p.text You don't have an account? please
+      | !{' '}
+      a(href="/sign-up") Create One

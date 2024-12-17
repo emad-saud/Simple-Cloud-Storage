@@ -1,0 +1,13 @@
+extends base
+block content
+  .form-box
+    h3 Sign Up
+    form#sign-up
+      input(type="text" id="name" placeholder="name")
+      input(type="email" id="email" placeholder="Email")
+      input(type="password" id="password" placeholder="Password")
+      input(type="password" id="password-confirm" placeholder="Password Confirm")
+      input(input type="submit" value="Send")
+    p.text Already have an account? please
+      | !{' '}
+      a(href="/login") Log in

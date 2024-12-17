@@ -1,0 +1,17 @@
+extends base
+
+block content
+  .files-head
+    form#upload(action="")
+      label.fileBtn(for="file") Upload file
+      input(type="file" id="file" name="file")
+      input(type="submit")
+
+  .files
+    if files
+      each file in files
+        .file-box
+          .file-holder
+            i.fa-regular.fa-file
+            .filename #{file.originalName}
+          a.download(href=`/api/files/${file._id}`) Download
